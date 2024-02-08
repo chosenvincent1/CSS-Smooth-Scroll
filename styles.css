@@ -12,6 +12,8 @@ body {
     font-family: sans-serif;
     padding-top: 80px;
     height: 100vh;
+    /* max-width: 1400px;
+    margin: 0 auto; */
 }
 
 nav {
@@ -25,6 +27,7 @@ nav {
     width: 100%;
     left: 0;
     top: 0;
+    z-index: 10;
 }
 .menu-bar {
     display: none;
@@ -65,54 +68,11 @@ a {
     background: linear-gradient(91.88deg,#2c57f3 .88%,#a506d8 98.71%);
 }
 
-
-/* AUTOMATION SECTION */
-.home-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    background-color: rgba(242,242,242);
-    padding: 50px;
-    height: 100%;
-}
-.home-text-container {
-    width: 60%;
-    padding-top: 20px;
-    height: 100%;
-}
-
-.home-text-container h2 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-
-.home-text-container p {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 30px;
-}
-
-.home-text-container button {
-    font-size: 20px;
-    color: rgba(14,186,197);
-    font-weight: 600;
-    border: none;
-    background: none;
-}
-
-.home-image-container {
-    width: 100%;
-    display: flex;
-}
-
-.home-image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-
 @media only screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
     nav {
         display: flex;
         padding: 30px 20px;
@@ -134,12 +94,61 @@ a {
     }
 }
 
+
+/* AUTOMATION SECTION */
+.automation-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: rgba(242,242,242);
+    padding: 50px;
+}
+.automation-text-container {
+    width: 60%;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.automation-text-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.automation-text-container p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.automation-text-container button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: rgba(14,186,197);
+    font-weight: 600;
+    border: none;
+    background: none;
+}
+
+.automation-image-container {
+    width: 100%;
+    display: flex;
+}
+
+.automation-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 @media only screen and (max-width: 992px) {
-    .home-image-container {
+    .automation-image-container {
         display: none;
     }
 
-    .home-text-container {
+    .automation-text-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -149,11 +158,11 @@ a {
         height: 100%;
     }
 
-    .home-text-container h2, .home-text-container p {
+    .automation-text-container h2, .automation-text-container p {
         text-align: center;
     }
 
-    .home-text-container button {
+    .automation-text-container button {
         font-size: 20px;
         color: rgba(14,186,197);
         font-weight: 600;
@@ -237,8 +246,87 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+    .about-section {
+        padding: 80px 20px;
+    }
     .grid {
         grid-template-columns: 1fr;
+    }
+}
+
+
+/* Testing */
+.testing-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: #fff;
+    padding: 50px;
+}
+.testing-text-container {
+    width: 60%;
+    padding-top: 20px;
+    height: 100%;
+}
+
+.testing-text-container h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.testing-text-container p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.testing-text-container button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    color: rgba(14,186,197);
+    font-weight: 600;
+    border: none;
+    background: none;
+}
+
+.testing-image-container {
+    width: 100%;
+    display: flex;
+}
+.testing-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .testing-image-container {
+        display: none;
+    }
+
+    .testing-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        padding-top: 20px;
+        height: 100%;
+    }
+
+    .testing-text-container h2, .testing-text-container p {
+        text-align: center;
+    }
+
+    .testing-text-container button {
+        font-size: 20px;
+        color: rgba(14,186,197);
+        font-weight: 600;
+        border: none;
+        background: none;
     }
 }
 
